@@ -177,7 +177,7 @@
     };
 
     home.packages = with pkgs; [
-      nur.repos.ymstnt.surf
+      #nur.repos.ymstnt.surf
     ];
 
     xdg.desktopEntries.firefox-developer-edition = {

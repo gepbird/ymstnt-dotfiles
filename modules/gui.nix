@@ -33,7 +33,7 @@
     # Electron apps
     anytype
     nur.repos.ymstnt.beeper
-    nur.repos.ymstnt.deepdwn
+    #nur.repos.ymstnt.deepdwn
     discord
     drawio
     element-desktop
