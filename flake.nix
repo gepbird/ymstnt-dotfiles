@@ -49,5 +49,18 @@
         cassiopeia = mkSystem ./hosts/cassiopeia;
       };
       nixosModules = import ./modules;
+
+    devShells.x86_64-linux.gha = 
+      let
+        pkgs = import nixpkgs { 
+          system = "x86_64-linux";
+          config.allowUnfree = true;
+        };
+      in
+      pkgs.mkShell {
+        packages = with pkgs; [
+          anytype
+        ];
+      };
   };
 }
